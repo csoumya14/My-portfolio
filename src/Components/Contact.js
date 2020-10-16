@@ -12,7 +12,8 @@ const Container = styled.div`
   background-color: #e4decd;
   height: 90vh;
   width: 100%;
-  margin-top: -30px;
+  position: absolute;
+
   .title {
     color: #2f4454;
     text-transform: uppercase;
@@ -21,15 +22,42 @@ const Container = styled.div`
     padding-top: 20px;
     font-weight: 800;
   }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    .title {
+      font-size: 30px;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .title {
+      font-size: 30px;
+    }
+  }
 `
 const Card = styled.div`
   margin: auto;
-  width: 500px;
+  width: 40%;
   height: 400px;
   text-align: center;
   background-color: #c2b490;
 
   box-shadow: 3px 21px 21px 5px rgba(194, 180, 144, 0.73);
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    width: 60%;
+    margin-top: 150px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 60%;
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    margin-top: 50px;
+    width: 60%;
+  }
+  @media only screen and (max-width: 420px) {
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 0px 0px 0px 0px rgba(194, 180, 144, 0.73);
+    border: 1px solid #5c5f58;
+  }
 `
 const InfoContainer = styled.div`
   margin-top: 40px;

@@ -30,6 +30,12 @@ const Skills = styled.ul`
   margin: 0 0 30px 0;
   padding: 0;
   width: calc(100% - 10px);
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    margin: 10px 10px 30px 15px;
+  }
+  @media only screen and (max-width: 420px) {
+    margin: 10px 10px 30px 0px;
+  }
   .Link {
     display: block;
     position: relative;

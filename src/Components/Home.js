@@ -2,14 +2,27 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 const Context = styled.div`
-  width: 100%;
-  position: absolute;
-  top: 200px;
-  margin-left: -100px;
+  width: 900px;
+  position: relative;
+  margin: 0 auto;
   text-align: center;
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    width: 80%;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 80%;
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    width: 100%;
+    font-size: 8vw;
+  }
+  @media only screen and (max-width: 420px) {
+    width: 80%;
+  }
 `
 const Container = styled.div`
   background-color: #1a1a1d;
+  position: absolute;
   height: 100vh;
   width: 100%;
 `
@@ -20,8 +33,23 @@ const Area = styled.div`
 const Title = styled.p`
   font-size: 70px;
   color: #fff;
-  width: 65%;
-  margin-left: 360px;
+  width: 100%;
+  text-align: center;
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    font-size: 6vw;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 6vw;
+  }
+
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    color: green;
+    font-size: 8vw;
+  }
+
+  @media only screen and (max-width: 420px) {
+    font-size: 6vw;
+  }
 `
 const SpanString = styled.span`
   color: #ee4c7c;
@@ -63,11 +91,17 @@ const Circles = styled.ul`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  @media only screen and (max-width: 420px) {
+  }
   ${Links}:nth-child(1) {
     left: 25%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
+    @media only screen and (max-width: 420px) {
+      width: 30px;
+      height: 30px;
+    }
   }
   ${Links}:nth-child(2) {
     left: 10%;
@@ -75,6 +109,10 @@ const Circles = styled.ul`
     height: 20px;
     animation-delay: 2s;
     animation-duration: 12s;
+    @media only screen and (max-width: 420px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   ${Links}:nth-child(3) {
@@ -82,6 +120,10 @@ const Circles = styled.ul`
     width: 20px;
     height: 20px;
     animation-delay: 4s;
+    @media only screen and (max-width: 420px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   ${Links}:nth-child(4) {
@@ -90,6 +132,10 @@ const Circles = styled.ul`
     height: 60px;
     animation-delay: 0s;
     animation-duration: 18s;
+    @media only screen and (max-width: 420px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   ${Links}:nth-child(5) {
@@ -97,6 +143,8 @@ const Circles = styled.ul`
     width: 20px;
     height: 20px;
     animation-delay: 0s;
+    @media only screen and (max-width: 420px) {
+    }
   }
 
   ${Links}:nth-child(6) {
@@ -104,6 +152,10 @@ const Circles = styled.ul`
     width: 110px;
     height: 110px;
     animation-delay: 3s;
+    @media only screen and (max-width: 420px) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   ${Links}:nth-child(7) {
@@ -111,6 +163,10 @@ const Circles = styled.ul`
     width: 150px;
     height: 150px;
     animation-delay: 7s;
+    @media only screen and (max-width: 420px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   ${Links}:nth-child(8) {
@@ -119,6 +175,10 @@ const Circles = styled.ul`
     height: 25px;
     animation-delay: 15s;
     animation-duration: 45s;
+    @media only screen and (max-width: 420px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   ${Links}:nth-child(9) {
@@ -127,12 +187,20 @@ const Circles = styled.ul`
     height: 15px;
     animation-delay: 2s;
     animation-duration: 35s;
+    @media only screen and (max-width: 420px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   ${Links}:nth-child(10) {
     left: 85%;
     width: 150px;
     height: 150px;
+    @media only screen and (max-width: 420px) {
+      width: 60px;
+      height: 60px;
+    }
     animation-delay: 0s;
     animation-duration: 11s;
   }

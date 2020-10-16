@@ -18,6 +18,12 @@ const Title = styled.h1`
   font-size: 40px;
   margin-top: 10px;
   font-weight: 800;
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 420px) {
+    font-size: 30px;
+  }
 `
 const ContentContainer = styled.div`
   display: flex;
@@ -40,6 +46,7 @@ const ContentOverlay = styled.div`
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  
 }
 `
 const InheritedOverlay1 = styled(ContentOverlay)`

@@ -17,14 +17,29 @@ const Title = styled.h1`
   font-size: 40px;
   margin-top: 20px;
   font-weight: 800;
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 420px) {
+    font-size: 30px;
+  }
 `
 const Strengths = styled.div`
-  width: 100%;
-
   margin-top: 60px;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+
+  justify-content: space-evenly;
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    flex-wrap: wrap;
+  }
+  @media only screen and (max-width: 420px) {
+    flex-wrap: wrap;
+  }
 `
 const CodeIcon = styled(CodeAlt)`
   color: #2f4454;
@@ -52,42 +67,134 @@ const DeviceIcon = styled(Devices)`
   z-index: 1;
   margin-left: 18px;
 `
-const StrengthWords = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin-top: 30px;
-  color: #2f4454;
-  font-size: 18px;
-  justify-content: space-around;
+const StrengthDiv = styled.div`
+  width: 50%;
+
+  padding-left: 180px;
+
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    padding-left: 110px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    padding-left: 145px;
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    padding-left: 80px;
+  }
+  @media only screen and (max-width: 420px) {
+    padding-left: 50px;
+  }
 `
+
 const Words1 = styled.div`
-  width: 30%;
-  text-align: center;
   .heading1 {
-    margin-left: 45px;
+    margin-top: 50px;
+    margin-left: 1px;
   }
   .para1 {
-    width: 50%;
-    margin-left: 130px;
+    margin-left: -70px;
+    width: 80%;
+    text-align: center;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .para1 {
+      margin-left: 0px;
+      text-align: left;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .para1 {
+      margin-left: 0px;
+      text-align: left;
+    }
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    .para1 {
+      margin-left: 1px;
+      text-align: left;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .heading1 {
+      margin-left: 5px;
+    }
+    .para1 {
+      margin-left: 1px;
+      text-align: left;
+    }
   }
 `
 const Words2 = styled.div`
-  width: 40%;
-  text-align: center;
+  .heading2 {
+    margin-left: -19px;
+    margin-top: 50px;
+  }
   .para2 {
-    width: 50%;
-    margin-left: 150px;
+    margin-left: -60px;
+    width: 80%;
+    text-align: center;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .para2 {
+      margin-left: -15px;
+      text-align: left;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .para2 {
+      margin-left: -12px;
+      text-align: left;
+    }
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    .para2 {
+      margin-left: 1px;
+      text-align: left;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .para2 {
+      margin-left: -5px;
+      text-align: left;
+    }
   }
 `
 const Words3 = styled.div`
-  width: 30%;
-  text-align: center;
   .heading3 {
-    margin-right: 50px;
+    margin-left: 5px;
+    margin-top: 50px;
   }
   .para3 {
-    width: 50%;
-    margin-left: 90px;
+    margin-left: -60px;
+    width: 80%;
+    text-align: center;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .para3 {
+      margin-left: -5px;
+      text-align: left;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .para3 {
+      margin-left: 0px;
+      text-align: left;
+    }
+  }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    .para3 {
+      margin-left: 1px;
+      text-align: left;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .heading3 {
+      margin-right: 0px;
+    }
+    .para3 {
+      margin-left: 0px;
+      text-align: left;
+    }
   }
 `
 
@@ -97,6 +204,18 @@ const AboutSkill = styled.div`
   font-size: 18px;
   margin-top: 50px;
   justify-content: space-around;
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  @media only screen and (max-width: 420px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 16px;
+  }
 `
 const AboutMe = styled.div`
   width: 500px;
@@ -105,9 +224,18 @@ const AboutMe = styled.div`
 
     margin-left: 50px;
   }
+  @media only screen and (max-width: 420px) {
+    width: 100%;
+    .paraAbout {
+      color: #2f4454;
+    }
+  }
 `
 const Skill = styled.div`
   width: 500px;
+  @media only screen and (max-width: 420px) {
+    width: 100%;
+  }
 `
 
 const Badge = styled.div`
@@ -115,8 +243,9 @@ const Badge = styled.div`
   background: #e7717d;
   height: 100px;
   width: 100px;
+  
   border-radius: 50px;
-  display: flex;
+ 
   &:before,
   &:after {
     content: '';
@@ -137,6 +266,7 @@ const Badge = styled.div`
 }
     }
   }
+  
 `
 
 const About = () => {
@@ -144,32 +274,37 @@ const About = () => {
     <Container>
       <Title>About Me</Title>
       <Strengths>
-        <Badge>
-          <CodeIcon />
-        </Badge>
-        <Badge>
-          <FileIcon />
-        </Badge>
-        <Badge>
-          <DeviceIcon />
-        </Badge>
+        <StrengthDiv>
+          <Badge>
+            <CodeIcon />
+          </Badge>
+          <Words1>
+            <h3 className="heading1">Clean Code</h3>
+            <p className="para1">I focus on writing cleaner codes with codebase clarity</p>
+          </Words1>
+        </StrengthDiv>
+        <StrengthDiv>
+          <Badge>
+            <FileIcon />
+          </Badge>
+          <Words2>
+            <h3 className="heading2">Modern Syntaxes</h3>
+            <p className="para2">
+              Passionate about learning modern syntaxes and try to incorporate them in projects
+            </p>
+          </Words2>
+        </StrengthDiv>
+        <StrengthDiv>
+          <Badge>
+            <DeviceIcon />
+          </Badge>
+          <Words3>
+            <h3 className="heading3">Responsive</h3>
+            <p className="para3">I make sure the layout works on both big and small screen sizes</p>
+          </Words3>
+        </StrengthDiv>
       </Strengths>
-      <StrengthWords>
-        <Words1>
-          <h3 className="heading1">Clean Code</h3>
-          <p className="para1">I focus on writing cleaner codes with codebase clarity</p>
-        </Words1>
-        <Words2>
-          <h3 className="heading2">Modern Syntaxes</h3>
-          <p className="para2">
-            Passionate about learning modern syntaxes and try to incorporate them in projects
-          </p>
-        </Words2>
-        <Words3>
-          <h3 className="heading3">Responsive</h3>
-          <p className="para3">I make sure the layout works on both big and small screen sizes</p>
-        </Words3>
-      </StrengthWords>
+
       <AboutSkill>
         <AboutMe>
           <p className="paraAbout">

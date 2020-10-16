@@ -20,10 +20,9 @@ const ShowBottomText = keyframes`
 const AnimatedTitle = styled.div`
   color: #222;
   height: 150px;
-  margin-left: 260px;
+  margin: 0 auto;
   position: relative;
-  top: 120px;
-  transform: translate(-50%, -50%);
+  top: 50px;
   width: 260px;
 `
 const TextTop = styled.div`
