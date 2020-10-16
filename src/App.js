@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Home from './Components/Home'
 import About from './Components/About'
 import Works from './Components/Works'
@@ -8,14 +8,10 @@ import GlobalStyle from './Themes/globalStyles'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const App = () => {
-  const [isNavVisible, setIsNavVisible] = useState(true)
-  const toggleNav = () => {
-    setIsNavVisible(!isNavVisible)
-  }
   return (
     <Router>
       <GlobalStyle />
-      <SideBar isNavVisible={isNavVisible} toggleNav={toggleNav} />
+      <SideBar />
 
       <Switch>
         <Route path="/about">

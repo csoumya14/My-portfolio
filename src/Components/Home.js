@@ -13,8 +13,7 @@ const Context = styled.div`
     width: 80%;
   }
   @media only screen and (min-width: 421px) and (max-width: 767px) {
-    width: 100%;
-    font-size: 8vw;
+    width: 80%;
   }
   @media only screen and (max-width: 420px) {
     width: 80%;
@@ -43,8 +42,7 @@ const Title = styled.p`
   }
 
   @media only screen and (min-width: 421px) and (max-width: 767px) {
-    color: green;
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   @media only screen and (max-width: 420px) {

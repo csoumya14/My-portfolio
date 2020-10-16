@@ -46,6 +46,7 @@ const Card = styled.div`
     margin-top: 150px;
   }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-top: 100px;
     width: 60%;
   }
   @media only screen and (min-width: 421px) and (max-width: 767px) {

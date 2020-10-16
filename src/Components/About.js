@@ -26,20 +26,9 @@ const Title = styled.h1`
 `
 const Strengths = styled.div`
   margin-top: 60px;
-
   display: flex;
   flex-direction: row;
-
-  justify-content: space-evenly;
-  @media only screen and (min-width: 421px) and (max-width: 767px) {
-    flex-wrap: wrap;
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    flex-wrap: wrap;
-  }
-  @media only screen and (max-width: 420px) {
-    flex-wrap: wrap;
-  }
+  justify-content: center;
 `
 const CodeIcon = styled(CodeAlt)`
   color: #2f4454;
@@ -68,134 +57,33 @@ const DeviceIcon = styled(Devices)`
   margin-left: 18px;
 `
 const StrengthDiv = styled.div`
-  width: 50%;
-
-  padding-left: 180px;
-
-  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-    padding-left: 110px;
+  display: flex;
+  flex-direction:column
+  align_items:center;
+  justify-content:center;
+ 
+  .heading {
+    margin-top: 140px;
+    margin-left: 0px;
+    position: absolute;
+  }
+  .para {
+    margin-left: 0px;
+    margin-top: 170px;
+    width:50%;
+    text-align:center;  
+  }
+  
+   @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+   
   }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    padding-left: 145px;
+    
   }
   @media only screen and (min-width: 421px) and (max-width: 767px) {
-    padding-left: 80px;
+    
   }
-  @media only screen and (max-width: 420px) {
-    padding-left: 50px;
-  }
-`
-
-const Words1 = styled.div`
-  .heading1 {
-    margin-top: 50px;
-    margin-left: 1px;
-  }
-  .para1 {
-    margin-left: -70px;
-    width: 80%;
-    text-align: center;
-  }
-  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-    .para1 {
-      margin-left: 0px;
-      text-align: left;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .para1 {
-      margin-left: 0px;
-      text-align: left;
-    }
-  }
-  @media only screen and (min-width: 421px) and (max-width: 767px) {
-    .para1 {
-      margin-left: 1px;
-      text-align: left;
-    }
-  }
-  @media only screen and (max-width: 420px) {
-    .heading1 {
-      margin-left: 5px;
-    }
-    .para1 {
-      margin-left: 1px;
-      text-align: left;
-    }
-  }
-`
-const Words2 = styled.div`
-  .heading2 {
-    margin-left: -19px;
-    margin-top: 50px;
-  }
-  .para2 {
-    margin-left: -60px;
-    width: 80%;
-    text-align: center;
-  }
-  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-    .para2 {
-      margin-left: -15px;
-      text-align: left;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .para2 {
-      margin-left: -12px;
-      text-align: left;
-    }
-  }
-  @media only screen and (min-width: 421px) and (max-width: 767px) {
-    .para2 {
-      margin-left: 1px;
-      text-align: left;
-    }
-  }
-  @media only screen and (max-width: 420px) {
-    .para2 {
-      margin-left: -5px;
-      text-align: left;
-    }
-  }
-`
-const Words3 = styled.div`
-  .heading3 {
-    margin-left: 5px;
-    margin-top: 50px;
-  }
-  .para3 {
-    margin-left: -60px;
-    width: 80%;
-    text-align: center;
-  }
-  @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-    .para3 {
-      margin-left: -5px;
-      text-align: left;
-    }
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .para3 {
-      margin-left: 0px;
-      text-align: left;
-    }
-  }
-  @media only screen and (min-width: 421px) and (max-width: 767px) {
-    .para3 {
-      margin-left: 1px;
-      text-align: left;
-    }
-  }
-  @media only screen and (max-width: 420px) {
-    .heading3 {
-      margin-right: 0px;
-    }
-    .para3 {
-      margin-left: 0px;
-      text-align: left;
-    }
-  }
+  
 `
 
 const AboutSkill = styled.div`
@@ -239,7 +127,7 @@ const Skill = styled.div`
 `
 
 const Badge = styled.div`
-  position: relative;
+  position: absolute;
   background: #e7717d;
   height: 100px;
   width: 100px;
@@ -278,30 +166,24 @@ const About = () => {
           <Badge>
             <CodeIcon />
           </Badge>
-          <Words1>
-            <h3 className="heading1">Clean Code</h3>
-            <p className="para1">I focus on writing cleaner codes with codebase clarity</p>
-          </Words1>
+          <h3 className="heading">Clean Code</h3>
+          <p className="para">I focus on writing cleaner codes with codebase clarity</p>
         </StrengthDiv>
         <StrengthDiv>
           <Badge>
             <FileIcon />
           </Badge>
-          <Words2>
-            <h3 className="heading2">Modern Syntaxes</h3>
-            <p className="para2">
-              Passionate about learning modern syntaxes and try to incorporate them in projects
-            </p>
-          </Words2>
+          <h3 className="heading">Modern Syntaxes</h3>
+          <p className="para">
+            Passionate about learning modern syntaxes and try to incorporate them in projects
+          </p>
         </StrengthDiv>
         <StrengthDiv>
           <Badge>
             <DeviceIcon />
           </Badge>
-          <Words3>
-            <h3 className="heading3">Responsive</h3>
-            <p className="para3">I make sure the layout works on both big and small screen sizes</p>
-          </Words3>
+          <h3 className="heading">Responsive</h3>
+          <p className="para">I make sure the layout works on both big and small screen sizes</p>
         </StrengthDiv>
       </Strengths>
 
