@@ -24,6 +24,12 @@ const AnimatedTitle = styled.div`
   position: relative;
   top: 50px;
   width: 260px;
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    width: 260px;
+  }
+  @media only screen and (max-width: 420px) {
+    width: 260px;
+  }
 `
 const TextTop = styled.div`
   height: 50%;
@@ -58,6 +64,12 @@ const Info = styled.div`
   .spanText {
     display: block;
   }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 420px) {
+    font-size: 20px;
+  }
 `
 const InfoBottom = styled.div`
   font-size: 25px;
@@ -70,6 +82,12 @@ const InfoBottom = styled.div`
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 420px) {
+    font-size: 20px;
+  }
 `
 
 const ContactAnimation = () => {
