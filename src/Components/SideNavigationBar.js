@@ -111,7 +111,7 @@ const Nav = styled.div`
 
 const SideBar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false)
-  const [isNavVisible, setIsNavVisible] = useState(true)
+  const [isNavVisible, setIsNavVisible] = useState(false)
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible)
   }

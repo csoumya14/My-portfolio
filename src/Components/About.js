@@ -29,6 +29,12 @@ const Strengths = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  @media only screen and (max-width: 420px) {
+    flex-wrap: wrap;
+  }
 `
 const CodeIcon = styled(CodeAlt)`
   color: #2f4454;
@@ -74,12 +80,7 @@ const StrengthDiv = styled.div`
     text-align:center;  
   }
   
-   @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-   
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    
-  }
+  
   @media only screen and (min-width: 421px) and (max-width: 767px) {
     
   }
