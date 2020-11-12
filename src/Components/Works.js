@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import country from '../Images/country-data.png'
 import jobListing from '../Images/joblisting.png'
 import projectTracking from '../Images/projectTracking.png'
+import easybank from '../Images/easybank.png'
 
 const Container = styled.div`
   background-color: #fff;
@@ -54,6 +55,9 @@ const InheritedOverlay1 = styled(ContentOverlay)`
 `
 const InheritedOverlay2 = styled(ContentOverlay)`
   background-image: url(${projectTracking});
+`
+const InheritedOverlay3 = styled(ContentOverlay)`
+  background-image: url(${easybank});
 `
 const ContentDetails = styled.div`
   position: absolute;
@@ -170,10 +174,7 @@ const Works = () => {
             <h6 className="heading1">HTML/CSS/JavaScript</h6>
             <p className="para">A website design with some interesting layout</p>
 
-            <a
-              className="externalLink"
-              href="https://project-tracking-intro-component-30ly4mov0.vercel.app/"
-            >
+            <a className="externalLink" href="https://intro-component-eight.vercel.app/">
               View site
             </a>
             <a
@@ -181,6 +182,20 @@ const Works = () => {
               href="https://github.com/csoumya14/Project-tracking-intro-component.git"
             >
               View Code
+            </a>
+          </ContentDetails>
+        </Content>
+        <Content>
+          <InheritedOverlay3></InheritedOverlay3>
+          <ContentDetails>
+            <h3 className="heading">Demo Landing Page</h3>
+            <h6 className="heading1">React JS</h6>
+            <p className="para">A landing page with interesting layouts</p>
+            <a className="externalLink" href="https://easybank-challenge-six.vercel.app/">
+              View site
+            </a>
+            <a className="externalLink" href="https://github.com/csoumya14/easybank-challenge.git">
+              View code
             </a>
           </ContentDetails>
         </Content>

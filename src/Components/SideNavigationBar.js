@@ -8,6 +8,7 @@ const Header = styled.div`
   display: grid;
   background-color: #1a1a1d;
   grid-template-areas: 'nav logo';
+  position: relative;
   @media only screen and (min-width: 1024px) and (max-width: 1365px) {
     border-bottom: 1px solid #1a1a1d;
   }
@@ -74,7 +75,6 @@ const Nav = styled.div`
 
   ${StyledLink} {
     position: relative;
-
     z-index: 1;
     &:hover {
       color: #fff;
@@ -88,7 +88,6 @@ const Nav = styled.div`
       bottom: 0;
       right: 0;
       margin: auto;
-
       height: 1px;
       content: '.';
       color: transparent;
@@ -112,6 +111,7 @@ const Nav = styled.div`
 const SideBar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false)
   const [isNavVisible, setIsNavVisible] = useState(false)
+
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible)
   }
