@@ -1,16 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
-import country from '../Images/country-data.png'
-import jobListing from '../Images/joblisting.png'
-import projectTracking from '../Images/projectTracking.png'
-import easybank from '../Images/easybank.png'
+import React from 'react';
+import styled from 'styled-components';
+import country from '../Images/country-data.png';
+import photoSnap from '../Images/photosnap.png';
+import clockApp from '../Images/clockApp.png';
+import easybank from '../Images/easybank.png';
 
 const Container = styled.div`
   background-color: #fff;
   margin: 0;
   width: 100%;
   height: 100vh;
-`
+`;
 
 const Title = styled.h1`
   color: #2f4454;
@@ -25,16 +25,16 @@ const Title = styled.h1`
   @media only screen and (max-width: 420px) {
     font-size: 30px;
   }
-`
+`;
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-`
+`;
 
 const ContentOverlay = styled.div`
-  background-image: url(${jobListing});
+  background-image: url(${photoSnap});
   background-size:cover;
   position: absolute;
   height: 99%;
@@ -49,16 +49,16 @@ const ContentOverlay = styled.div`
   transition: all 0.4s ease-in-out 0s;
   
 }
-`
+`;
 const InheritedOverlay1 = styled(ContentOverlay)`
   background-image: url(${country});
-`
+`;
 const InheritedOverlay2 = styled(ContentOverlay)`
-  background-image: url(${projectTracking});
-`
+  background-image: url(${clockApp});
+`;
 const InheritedOverlay3 = styled(ContentOverlay)`
   background-image: url(${easybank});
-`
+`;
 const ContentDetails = styled.div`
   position: absolute;
   text-align: center;
@@ -109,7 +109,7 @@ const ContentDetails = styled.div`
       width: 65%;
     }
   }
-`
+`;
 const Content = styled.div`
   position: relative;
   width: 90%;
@@ -126,7 +126,7 @@ const Content = styled.div`
     left: 50%;
     opacity: 1;
   }
-`
+`;
 
 const Works = () => {
   return (
@@ -136,16 +136,15 @@ const Works = () => {
         <Content>
           <ContentOverlay></ContentOverlay>
           <ContentDetails>
-            <h3 className="heading">Job Listings</h3>
+            <h3 className="heading">Photosnap</h3>
             <h6 className="heading1">React JS</h6>
             <p className="para">
-              A job listing site demo that allows user to filter out jobs based on the categories
-              selected.
+              A multipage website modeling the marketing site for a photo-sharing app
             </p>
-            <a className="externalLink" href="https://job-listing-challenge-sand.vercel.app/">
+            <a className="externalLink" href="https://photosnap-deploy.vercel.app">
               View site
             </a>
-            <a className="externalLink" href="https://github.com/csoumya14/JobListing.git">
+            <a className="externalLink" href="https://github.com/csoumya14/photosnap.git">
               View code
             </a>
           </ContentDetails>
@@ -153,16 +152,13 @@ const Works = () => {
         <Content>
           <InheritedOverlay1></InheritedOverlay1>
           <ContentDetails>
-            <h3 className="heading">Country Data Explorer</h3>
-            <h6 className="heading1">React JS</h6>
-            <p className="para">
-              A web application that allows user to get information about various countries based on
-              search parameters. REST Countries API is used as the information source{' '}
-            </p>
-            <a className="externalLink" href="https://csoumya14.github.io/countapi/">
+            <h3 className="heading">Todo App</h3>
+            <h6 className="heading1">React JS/Styled Components</h6>
+            <p className="para">A todo app that allows user to add and edit todo activities</p>
+            <a className="externalLink" href="https://todo-app-final.vercel.app/">
               View site
             </a>
-            <a className="externalLink" href="https://github.com/csoumya14/countapi.git">
+            <a className="externalLink" href="https://github.com/csoumya14/Todo-app-final.git">
               View code
             </a>
           </ContentDetails>
@@ -170,17 +166,14 @@ const Works = () => {
         <Content>
           <InheritedOverlay2></InheritedOverlay2>
           <ContentDetails>
-            <h3 className="heading">Demo Website Homepage</h3>
-            <h6 className="heading1">HTML/CSS/JavaScript</h6>
-            <p className="para">A website design with some interesting layout</p>
+            <h3 className="heading">Clock App</h3>
+            <h6 className="heading1">ReactJS/Styled components</h6>
+            <p className="para">A clock app that shows the time and location of the visitor</p>
 
-            <a className="externalLink" href="https://intro-component-eight.vercel.app/">
+            <a className="externalLink" href="https://clock-app-nu.vercel.app/">
               View site
             </a>
-            <a
-              className="externalLink"
-              href="https://github.com/csoumya14/Project-tracking-intro-component.git"
-            >
+            <a className="externalLink" href="https://github.com/csoumya14/Clock-app.git">
               View Code
             </a>
           </ContentDetails>
@@ -201,7 +194,7 @@ const Works = () => {
         </Content>
       </ContentContainer>
     </Container>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;
