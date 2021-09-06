@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import country from '../Images/country-data.png';
+import todo from '../Images/TodoApp.png';
 import photoSnap from '../Images/photosnap.png';
 import clockApp from '../Images/clockApp.png';
 import easybank from '../Images/easybank.png';
@@ -51,13 +51,13 @@ const ContentOverlay = styled.div`
 }
 `;
 const InheritedOverlay1 = styled(ContentOverlay)`
-  background-image: url(${country});
+  background-image: url(${easybank});
 `;
 const InheritedOverlay2 = styled(ContentOverlay)`
   background-image: url(${clockApp});
 `;
 const InheritedOverlay3 = styled(ContentOverlay)`
-  background-image: url(${easybank});
+  background-image: url(${todo});
 `;
 const ContentDetails = styled.div`
   position: absolute;
@@ -136,8 +136,8 @@ const Works = () => {
         <Content>
           <ContentOverlay></ContentOverlay>
           <ContentDetails>
-            <h3 className="heading">Photosnap</h3>
-            <h6 className="heading1">React JS</h6>
+            <h3 className="heading">Photosnap App</h3>
+            <h6 className="heading1">React JS/Styled Components</h6>
             <p className="para">
               A multipage website modeling the marketing site for a photo-sharing app
             </p>
@@ -152,13 +152,13 @@ const Works = () => {
         <Content>
           <InheritedOverlay1></InheritedOverlay1>
           <ContentDetails>
-            <h3 className="heading">Todo App</h3>
-            <h6 className="heading1">React JS/Styled Components</h6>
-            <p className="para">A todo app that allows user to add and edit todo activities</p>
-            <a className="externalLink" href="https://todo-app-final.vercel.app/">
+            <h3 className="heading">Demo Landing Page</h3>
+            <h6 className="heading1">React JS</h6>
+            <p className="para">A landing page with interesting layouts</p>
+            <a className="externalLink" href="https://easybank-challenge-six.vercel.app/">
               View site
             </a>
-            <a className="externalLink" href="https://github.com/csoumya14/Todo-app-final.git">
+            <a className="externalLink" href="https://github.com/csoumya14/easybank-challenge.git">
               View code
             </a>
           </ContentDetails>
@@ -181,13 +181,13 @@ const Works = () => {
         <Content>
           <InheritedOverlay3></InheritedOverlay3>
           <ContentDetails>
-            <h3 className="heading">Demo Landing Page</h3>
-            <h6 className="heading1">React JS</h6>
-            <p className="para">A landing page with interesting layouts</p>
-            <a className="externalLink" href="https://easybank-challenge-six.vercel.app/">
+            <h3 className="heading">Todo App</h3>
+            <h6 className="heading1">React JS/Styled Components</h6>
+            <p className="para">A todo app that allows user to add and edit todo activities</p>
+            <a className="externalLink" href="https://todo-app-final.vercel.app/">
               View site
             </a>
-            <a className="externalLink" href="https://github.com/csoumya14/easybank-challenge.git">
+            <a className="externalLink" href="https://github.com/csoumya14/Todo-app-final.git">
               View code
             </a>
           </ContentDetails>
